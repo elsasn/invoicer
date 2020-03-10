@@ -1,0 +1,86 @@
+body {
+      background-color: #ecf0f5;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container{
+    width: 750px;
+}
+.glyphicon{
+    font-size: 18px;
+}
+.glyphicon-ok{
+    color: #008000;
+}
+.glyphicon-remove{
+    color:#dd0000;
+}
+.callout h4{
+    color:#FFFFFF;
+}
+ul{
+    list-style: none;
+}
+#system_details ul li{
+    margin-top:20px;
+    display: none;
+    font-size: 18px;
+}
+#box-footer{
+    margin-left:45px;
+}
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px; /* -1 * image width / 2 */
+    margin-top: -32px;
+    z-index: 1;
+    display: none;
+}
+.form-control{
+    border-radius: 0;
+}
+label{
+    font-weight: 500;
+}
+textarea{
+    resize: none;
+}
+.login-logo {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0;
+    background: #007196;
+    padding: 20px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+body.login-page:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/bg.jpg) repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+.callout {
+    padding: 10px 5px 5px 5px;
+}
+.spinner:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8) url(../img/cubes_loader.gif) no-repeat 50% 50%;
+    visibility: visible;
+    z-index: 5000;
+}
